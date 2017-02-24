@@ -10,7 +10,12 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Created by huang_liang on 2017/2/23.
@@ -31,7 +36,6 @@ public class GivingApplicationTest {
         assertEquals(20, u.getAge().intValue());
     }
 
-    /*
     @Test
     @Rollback
     public void testUserMapper() throws Exception {
@@ -68,6 +72,5 @@ public class GivingApplicationTest {
         }
 
     }
-    */
 
 }
