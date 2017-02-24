@@ -1,5 +1,6 @@
 package com.hnglng.giving.web;
 
+import com.hnglng.giving.GivingApplication;
 import com.hnglng.giving.domain.model.User;
 import com.hnglng.giving.domain.model.UserMapper;
 import org.junit.Test;
