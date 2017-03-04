@@ -1,11 +1,13 @@
 package com.hnglng.giving.web.controller;
 
 import com.hnglng.giving.domain.model.User;
-import com.hnglng.giving.domain.service.UserService;
+import com.hnglng.giving.infrastructure.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 /**
  * Created by huang_liang on 2017/2/23.
@@ -24,11 +26,14 @@ public class HelloController {
             userName = user.getName();
         }
 
-        // 加入一个属性，用来在模板中读取
         map.addAttribute("user", userName);
-        //map.addAttribute("user", "AAA");
+        return "hello";
+    }
 
-        // return模板文件的名称，对应src/main/resources/templates/hello.html
+    @RequestMapping("/helloall")
+    public String searchAll(ModelMap map) {
+        List<User> users = userService.findAllUsers();
+        map.addAttribute("users", users);
         return "hello";
     }
 }
