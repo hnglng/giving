@@ -5,6 +5,6 @@
     <title></title>
 </head>
 <body>
-<h1 th:text="${user}">Hello Thymeleaf!</h1>
+<h1>Hello ${user} !</h1>
 </body>
 </html>

@@ -1,8 +1,8 @@
 package com.hnglng.giving.web;
 
 import com.hnglng.giving.GivingApplication;
+import com.hnglng.giving.domain.mapper.UserMapper;
 import com.hnglng.giving.domain.model.User;
-import com.hnglng.giving.domain.model.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
