@@ -19,15 +19,6 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
-    /*
-    @RequestMapping("/login")
-    public ModelAndView index(ModelMap map) {
-        String userName = "Freemarker";
-        map.addAttribute("user", userName);
-        return new ModelAndView("login", map);
-    }
-    */
-
     /**
      * Go login.jsp
      * @return

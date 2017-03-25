@@ -27,23 +27,13 @@ public class IndexController {
         return new ModelAndView("hello", map);
     }
 
-
-    /*
-    @RequestMapping(value = {"/", "/index"})
-    public ModelAndView index(ModelMap map) {
-        String userName = "Freemarker";
-        map.addAttribute("user", userName);
-        return new ModelAndView("index", map);
-    }
-    */
-
     /**
      * Go Index
      * @return
      */
     @RequestMapping(value={"", "/", "index"})
     public String index() {
-        return "index";
+        return "index.jsp";
     }
 
     /**

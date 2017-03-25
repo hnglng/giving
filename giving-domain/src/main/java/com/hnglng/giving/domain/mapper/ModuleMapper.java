@@ -3,9 +3,10 @@ package com.hnglng.giving.domain.mapper;
 import java.util.List;
 
 import com.hnglng.giving.domain.model.ModuleInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-
+@Mapper
 public interface ModuleMapper {
 
 	/**

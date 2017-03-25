@@ -56,7 +56,7 @@ public class ShiroConfig {
 		Map<String, String> chains = Maps.newHashMap();
 		chains.put("/login", "anon");
 		chains.put("/unauthor", "anon");
-		//chains.put("/logout", "logout");
+		chains.put("/logout", "logout");
 		chains.put("/static/**", "anon");
 		chains.put("/css/**", "anon");
 		chains.put("/layer/**", "anon");

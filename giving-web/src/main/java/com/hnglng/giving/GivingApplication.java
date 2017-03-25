@@ -9,7 +9,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  * Created by Bright Huang on 1/8/17.
  */
 @SpringBootApplication
-@MapperScan(basePackages = "com.hnglng.giving")
+@MapperScan(basePackages = "com.hnglng.giving.domain.mapper")
 public class GivingApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(GivingApplication.class, args);
